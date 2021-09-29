@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Landing Page</title>
   </head>
@@ -64,27 +65,28 @@
     </section>
 
     <section id="contact-us">
-        <h2 class="contact-us-h2"> Hey There</h2>
+        <h2 class="contact-us-h2"> Hey There!</h2>
         <p class="contact-us-p" style="text-align: center;"> Enter the details to get started with:</p>
-        <form action="">
-            <label for="email">Email:</label> <br>
+        <form action="POST">
+            <label for="email">Enter your Email:</label> <br>
                 <input type="email" id="email"  size="30" required>
                 <br>
             <label for="phone">Enter your phone number:</label> <br>
-                 <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                 <input type="tel" id="phone" name="phone" placeholder="123-45-678" title="Only numbers allowed" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                        required>
             
       <br>
-            <a href="#" class="gradient-button gradient-button-1">Contact Us Today</a>
+            <!-- <a href="#" class="gradient-button gradient-button-1 contact-us-btn">Contact Us Today</a> -->
+            <button style="margin-left: 600px;" class="gradient-button gradient-button-1 ">Contact Us</button>
          
         </form>
 
     </section>
 
     <footer id="footer">
-        <p>Designed and Developed with <span>&#9829</span> by <a href="https://www.linkedin.com/in/renushinde/" target="_blank">Renu</a> and <a href="https://www.linkedin.com/in/emily-brockett/" target="_blank">Emily</a> </p>
+        <p>Designed and Developed with <span>&#9829</span> by <a href="https://www.linkedin.com/in/renushinde/" target="_blank">Renu</a> </p>
         <br>
-        <p>Follow us On: Twitter and linkedin </p>
+        <p>Follow us On: <i class="fa-brands fa-twitter"></i> <i class="fa-brands fa-linkedin-in"></i> <i class="fa-brands fa-facebook"></i></p>
     </footer>
   </body>
 </html>
